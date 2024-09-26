@@ -1,5 +1,54 @@
 {
+  "name": "first-project",
+  "version": "1.0.0",
+  "files": [
+    "api",
+    "config",
+    "migrations",
+    "seeders",
+    "uploads"
+  ],
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon backend/app.js",
+    "test": "NODE_ENV=test jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wecode-bootcamp-korea/37-1st-ZINWOOS-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wecode-bootcamp-korea/37-1st-ZINWOOS-backend/issues"
+  },
+  "homepage": "https://github.com/wecode-bootcamp-korea/37-1st-ZINWOOS-backend#readme",
+  "description": "",
+  "dependencies": {
+    "2": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "connect-redis": "^7.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-session": "^1.18.0",
+    "httpie": "^1.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "redis": "^4.7.0",
+    "sequelize": "^6.37.3",
+    "session-file-store": "^1.5.0",
+    "typeorm": "^0.3.10"
+  },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "chai": "^5.1.1",
+    "jest": "^29.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.2",
+    "sinon": "^19.0.2",
+    "sinon-express-mock": "^2.2.1"
   }
 }
