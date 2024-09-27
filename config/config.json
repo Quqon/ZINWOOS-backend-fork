@@ -18,8 +18,8 @@
     "username": "root",
     "password": "Ch0203@@",
     "database": "database_production",
-    "host": "zinwoos-mariadb",
+    "host": "zinwoos-mariadb.cloudtype.app",
     "port": "3306",
-    "dialect": "mariadb"
+    "dialect": "mysql"
   }
 }
