@@ -9,7 +9,9 @@ const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.p
     dialect: dbConfig.dialect,
     port: dbConfig.port,
     dialectOptions: {
-        connectTimeout: 60000
+        options: {
+            requestTimeout: 3000
+        }
     }
 });
 
