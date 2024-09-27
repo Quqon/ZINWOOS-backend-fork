@@ -18,8 +18,8 @@
     "username": "root",
     "password": "Dustn2409!=",
     "database": "database_production",
-    "host": "zinwoos-backend-fork",
-    "port": "3000",
+    "host": "zinwoos-mariadb",
+    "port": "3306",
     "dialect": "mariadb"
   }
 }
