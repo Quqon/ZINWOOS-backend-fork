@@ -20,6 +20,9 @@
     "database": "database_production",
     "host": "34.64.184.142",
     "port": "3306",
-    "dialect": "mariadb"
+    "dialect": "mysql",
+    "dialectOptions": {
+      "connectTimeout": 60000
+    }
   }
 }
