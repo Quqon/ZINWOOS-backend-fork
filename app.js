@@ -12,14 +12,15 @@ const { sequelize } = require('./api/models');
 const session = require('express-session');
 const fs = require('fs');
 const crypto = require('crypto');
-const RedisStore = require('connect-redis').default;
-const redis = require('redis');
+const FileStore = require('session-file-store')(session);
+// const RedisStore = require('connect-redis').default;
+// const redis = require('redis');
 
-const redisClient = redis.createClient();
-redisClient.on('error', (err) => {
-    console.log('Redis error: ', err);
-});
-redisClient.connect().catch(console.error);
+// const redisClient = redis.createClient();
+// redisClient.on('error', (err) => {
+//     console.log('Redis error: ', err);
+// });
+// redisClient.connect().catch(console.error);
 
 const envPath = path.resolve(__dirname, '.env');
 
@@ -60,7 +61,8 @@ app.use(cors({
 app.use(morgan('combined'));
 app.use(express.json());
 app.use(session({
-    store: new RedisStore({ client: redisClient }),
+    // store: new RedisStore({ client: redisClient }),
+    store: new FileStore(),
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
