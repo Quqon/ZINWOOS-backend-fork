@@ -16,9 +16,10 @@
   },
   "production": {
     "username": "root",
-    "password": null,
+    "password": "Dustn2409!=",
     "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "host": "zinwoos-backend-fork",
+    "port": "3000",
+    "dialect": "mariadb"
   }
 }
