@@ -54,7 +54,7 @@ if (fs.existsSync(envPath)) {
 }
 
 app.use(cors({
-    origin: "http://localhost:3001",
+    origin: "http://zinwoos-frontend-fork.vercel.app",
     credentials: true,
 }))
 app.use(morgan('combined'));
