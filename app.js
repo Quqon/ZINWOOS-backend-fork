@@ -90,7 +90,7 @@ const port = process.env.PORT;
 
 (async () => {
     try {
-        await sequelize.sync(); // 데이터베이스 동기화
+        await sequelize.sync({ logging: false, retry: { max: 3 }, pool: { acquire: 60000 } }); // 데이터베이스 동기화
 
         userRepository.setUserRole(1, 'admin')
             .then(() => console.log('Admin role set successfully'))
