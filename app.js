@@ -73,7 +73,6 @@ app.use(session({
         secure: false,
     }
 }));
-console.log('76')
 
 app.get('/', (req, res) => {
     if (!req.session.sessionId) {
@@ -83,28 +82,24 @@ app.get('/', (req, res) => {
     res.json({ sessionId: req.session.sessionId })
 });
 
-console.log('86')
-
 app.use(routes);
 app.use(globalErrorHandler);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const port = process.env.DB_PORT;
-console.log(port, 'port;;;;;')
 
-    (async () => {
-        try {
-            await sequelize.sync({ logging: false, retry: { max: 3 }, pool: { acquire: 60000 } }); // 데이터베이스 동기화
+(async () => {
+    try {
+        await sequelize.sync({ logging: false, retry: { max: 3 }, pool: { acquire: 60000 } }); // 데이터베이스 동기화
 
-            console.log('----------------------')
-            userRepository.setUserRole(1, 'admin')
-                .then(() => console.log('Admin role set successfully'))
-                .catch(err => console.error(err));
+        userRepository.setUserRole(1, 'admin')
+            .then(() => console.log('Admin role set successfully'))
+            .catch(err => console.error(err));
 
-            app.listen(port, () => {
-                console.log(`Listening to request on 127.0.0.1:${port}`);
-            });
-        } catch (err) {
-            console.error('Failed to sync database:', err);
-        }
-    })();
+        app.listen(port, () => {
+            console.log(`Listening to request on 127.0.0.1:${port}`);
+        });
+    } catch (err) {
+        console.error('Failed to sync database:', err);
+    }
+})();
