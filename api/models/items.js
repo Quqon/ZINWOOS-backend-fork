@@ -52,12 +52,12 @@ module.exports = (sequelize, DataTypes) => {
     });
 
     Items.associate = (models) => {
+        Items.belongsToMany(models.Main_categories, { through: models.Sub_categories });
         Items.belongsToMany(models.Options, { through: models.Options_items });
         Items.belongsToMany(models.Tags, { through: models.Tags_items });
         Items.belongsToMany(models.Users, { through: models.Carts });
         Items.belongsToMany(models.Users, { through: models.Likes });
         Items.belongsToMany(models.Users, { through: models.Orders });
-        Items.belongsToMany(models.Main_categories, { through: models.Sub_categories });
         Items.belongsToMany(models.Tags, { through: models.Tags_items });
     }
 

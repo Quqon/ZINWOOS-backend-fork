@@ -30,6 +30,9 @@ db.Orders = require('./orders')(sequelize, DataTypes);
 db.Tags = require('./tags')(sequelize, DataTypes);
 db.Tags_items = require('./tags_items')(sequelize, DataTypes);
 
+db.Main_categories.belongsToMany(db.Items, { through: db.Sub_categories, foreignKey: 'main_category_id', as: 'subMain' });
+db.Items.belongsToMany(db.Main_categories, { through: db.Sub_categories, foreignKey: 'id', as: 'subItems' });
+
 db.Items.belongsToMany(db.Options, { through: db.Options_items, foreignKey: 'item_id', as: 'options' });
 db.Options.belongsToMany(db.Items, { through: db.Options_items, foreignKey: 'option_id', as: 'optionsItems' });
 
@@ -47,9 +50,6 @@ db.Items.hasMany(db.Carts, { foreignKey: 'item_id' });
 
 db.Carts.belongsTo(db.Options, { foreignKey: 'option_id' });
 db.Options.hasMany(db.Carts, { foreignKey: 'option_id' });
-
-db.Main_categories.belongsToMany(db.Items, { through: db.Sub_categories, foreignKey: 'main_category_id', as: 'subMain' });
-db.Items.belongsToMany(db.Main_categories, { through: db.Sub_categories, foreignKey: 'id', as: 'subItems' });
 
 db.Tags.belongsToMany(db.Items, { through: db.Tags_items, foreignKey: 'tag_id', as: 'tags_items_Tags' });
 db.Items.belongsToMany(db.Tags, { through: db.Tags_items, foreignKey: 'item_id', as: 'tags_items_Items' });
