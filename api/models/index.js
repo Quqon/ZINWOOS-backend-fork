@@ -18,6 +18,8 @@ if (config.use_env_variable) {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+db.Main_categories = require('./main_categories')(sequelize, DataTypes);
+db.Sub_categories = require('./sub_categories')(sequelize, DataTypes);
 db.Items = require('./items')(sequelize, DataTypes);
 db.Options = require('./options')(sequelize, DataTypes);
 db.Options_items = require('./options_items')(sequelize, DataTypes);
@@ -25,8 +27,6 @@ db.Users = require('./users')(sequelize, DataTypes);
 db.Carts = require('./carts')(sequelize, DataTypes);
 db.Likes = require('./likes')(sequelize, DataTypes);
 db.Orders = require('./orders')(sequelize, DataTypes);
-db.Main_categories = require('./main_categories')(sequelize, DataTypes);
-db.Sub_categories = require('./sub_categories')(sequelize, DataTypes);
 db.Tags = require('./tags')(sequelize, DataTypes);
 db.Tags_items = require('./tags_items')(sequelize, DataTypes);
 
