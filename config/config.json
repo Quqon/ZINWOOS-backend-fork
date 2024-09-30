@@ -17,8 +17,8 @@
   "production": {
     "username": "root",
     "password": "Ch0203@@",
-    "database": "database_production",
-    "host": "34.64.184.142",
+    "database": "shop",
+    "host": "mariadb",
     "port": "3306",
     "dialect": "mysql",
     "dialectOptions": {
