@@ -1,5 +1,14 @@
+const Sequelize = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
     const Sub_categories = sequelize.define('Sub_categories', {
+        id: {
+            allowNull: false,
+            autoIncrement: true,
+            primaryKey: true,
+            type: Sequelize.INTEGER
+        }
+        ,
         name: {
             allowNull: false,
             type: DataTypes.STRING(50)

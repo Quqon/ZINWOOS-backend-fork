@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         sub_category_id: {
             allowNull: false,
-            type: DataTypes.INTEGER,
+            type: Sequelize.INTEGER,
             references: {
                 model: 'Sub_categories',
                 key: 'id'
