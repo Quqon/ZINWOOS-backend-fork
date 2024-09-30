@@ -26,5 +26,9 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Sub_categories.associate = (models) => {
+        Sub_categories.hasMany(models.Items, { foreignKey: 'sub_category_id' }); // FK 추가
+    }
+
     return Sub_categories;
 }
