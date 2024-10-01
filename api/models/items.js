@@ -53,7 +53,6 @@ module.exports = (sequelize, DataTypes) => {
 
     Items.associate = (models) => {
         Items.belongsToMany(models.Main_categories, { through: models.Sub_categories });
-        Items.belongsTo(models.Sub_categories, { foreignKey: 'sub_category_id' });
         Items.belongsToMany(models.Options, { through: models.Options_items });
         Items.belongsToMany(models.Tags, { through: models.Tags_items });
         Items.belongsToMany(models.Users, { through: models.Carts });
