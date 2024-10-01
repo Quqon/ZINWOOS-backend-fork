@@ -55,7 +55,7 @@ if (fs.existsSync(envPath)) {
 }
 
 app.use(cors({
-    origin: "https://zinwoos-frontend-fork-flaldb52o-alans-projects-44e1c540.vercel.app",
+    origin: "https://zinwoos-frontend-fork.vercel.app",
     credentials: true,
 }))
 app.use(morgan('combined'));
