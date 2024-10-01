@@ -7,10 +7,6 @@ module.exports = (sequelize, DataTypes) => {
         description: {
             allowNull: true,
             type: DataTypes.STRING(1000)
-        },
-        num: {
-            allowNull: true,
-            type: DataTypes.INTEGER
         }
     }, {
         tableName: 'main_categories',
