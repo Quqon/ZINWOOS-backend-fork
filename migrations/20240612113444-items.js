@@ -55,7 +55,7 @@ module.exports = {
       updated_at: {
         allowNull: true,
         type: Sequelize.DATE,
-        defaultValue: null,
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         onUpdate: Sequelize.literal('CURRENT_TIMESTAMP')
       }
     }))
