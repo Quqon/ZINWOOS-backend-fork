@@ -86,7 +86,7 @@ app.use(routes);
 app.use(globalErrorHandler);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-const port = process.env.DB_PORT;
+const port = process.env.PORT;
 
 (async () => {
     try {
