@@ -47,8 +47,17 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'items',
         timestamps: true,
-        createdAt: 'created_at',
-        updatedAt: 'updated_at'
+        createdAt: {
+            field: 'created_at',
+            type: DataTypes.DATE,
+            defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+        },
+        updatedAt: {
+            field: 'updated_at',
+            type: DataTypes.DATE,
+            defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            onUpdate: Sequelize.literal('CURRENT_TIMESTAMP')
+        }
     });
 
     Items.associate = (models) => {
