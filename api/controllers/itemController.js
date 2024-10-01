@@ -42,6 +42,7 @@ const getSubList = asyncWrap(async (req, res) => {
 })
 
 const getNewList = asyncWrap(async (req, res) => {
+    console.log(req, 'req')
     const data = await itemService.getNewList();
 
     return res.status(200).json({ data });
