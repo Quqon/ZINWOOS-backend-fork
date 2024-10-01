@@ -43,10 +43,7 @@ module.exports = (sequelize, DataTypes) => {
         stock: {
             allowNull: false,
             type: DataTypes.INTEGER.UNSIGNED
-        }
-    }, {
-        tableName: 'items',
-        timestamps: true,
+        },
         createdAt: {
             field: 'created_at',
             type: DataTypes.DATE,
@@ -58,6 +55,9 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             onUpdate: Sequelize.literal('CURRENT_TIMESTAMP')
         }
+    }, {
+        tableName: 'items',
+        timestamps: false,
     });
 
     Items.associate = (models) => {
