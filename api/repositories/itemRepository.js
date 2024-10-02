@@ -77,11 +77,12 @@ const getNewList = async () => {
                     through:
                     {
                         model: db.Tags_items,
-                        attributes: []
+                        attributes: [],
+                        where: {
+                            tag_id: 1
+                        }
                     },
-                    where: {
-                        '$tags_items.tag_id$': 1
-                    }
+
                 }
             ],
             attributes: [
