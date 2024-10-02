@@ -74,14 +74,12 @@ const getNewList = async () => {
                 {
                     model: db.Tags,
                     as: 'tags_items_Items',
-                    through: [
-                        {
-                            model: db.Tags_items,
-                            attributes: []
-                        }
-                    ],
+                    through:
+                    {
+                        model: db.Tags_items,
+                        attributes: []
+                    },
                     where: {
-                        '$tags_items_Items.tags_items.item_id$': { [db.Sequelize.Op.col]: 'Items.id' },
                         '$tags_items_Items.tags_items.tag_id$': 1
                     }
                 }
