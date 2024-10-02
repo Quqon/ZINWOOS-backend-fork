@@ -80,7 +80,7 @@ const getNewList = async () => {
                         attributes: []
                     },
                     where: {
-                        '$Tags.tags_items.tag_id$': 1
+                        '$tags_items.tag_id$': 1
                     }
                 }
             ],
