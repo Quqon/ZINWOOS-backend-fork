@@ -90,7 +90,8 @@ const getNewList = async () => {
                 'description',
                 'detail_image'
             ],
-            distinct: true
+            distinct: true,
+            logging: console.log
         })
         return result;
     } catch (error) {

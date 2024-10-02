@@ -75,7 +75,6 @@ app.use(session({
 }));
 
 app.get('/', (req, res) => {
-    console.log(req.session.sessionId, 'req.session.sessionId')
     if (!req.session.sessionId) {
         req.session.sessionId = `sess_${Math.random().toString(36).substr(2, 9)}`;
     }
