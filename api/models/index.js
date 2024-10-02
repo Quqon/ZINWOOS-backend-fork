@@ -51,7 +51,7 @@ db.Items.hasMany(db.Carts, { foreignKey: 'item_id' });
 db.Carts.belongsTo(db.Options, { foreignKey: 'option_id' });
 db.Options.hasMany(db.Carts, { foreignKey: 'option_id' });
 
-db.Tags.belongsToMany(db.Items, { through: db.Tags_items, foreignKey: 'tag_id', as: 'tags_items_Tags' });
-db.Items.belongsToMany(db.Tags, { through: db.Tags_items, foreignKey: 'item_id', as: 'tags_items_Items' });
+db.Tags.belongsToMany(db.Items, { through: db.Tags_items, foreignKey: 'tag_id', as: 'Items' });
+db.Items.belongsToMany(db.Tags, { through: db.Tags_items, foreignKey: 'item_id', as: 'Tags' });
 
 module.exports = db;

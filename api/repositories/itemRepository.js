@@ -73,14 +73,14 @@ const getNewList = async () => {
             include: [
                 {
                     model: db.Tags,
-                    as: 'tags_items_Items',
+                    as: 'Tags',
                     through:
                     {
                         model: db.Tags_items,
                         attributes: []
                     },
                     where: {
-                        '$tags_items_Items.tags_items.tag_id$': 1
+                        '$Tags.tags_items.tag_id$': 1
                     }
                 }
             ],
