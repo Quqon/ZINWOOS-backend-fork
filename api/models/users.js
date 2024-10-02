@@ -32,12 +32,21 @@ module.exports = (sequelize, DataTypes) => {
         role: {
             allowNull: false,
             type: DataTypes.STRING(50)
+        },
+        createdAt: {
+            field: 'created_at',
+            type: DataTypes.DATE,
+            defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+        },
+        updatedAt: {
+            field: 'updated_at',
+            type: DataTypes.DATE,
+            defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            onUpdate: Sequelize.literal('CURRENT_TIMESTAMP')
         }
     }, {
         tableName: 'users',
-        timestamps: true,
-        createdAt: 'created_at',
-        updatedAt: 'updated_at'
+        timestamps: false,
     });
 
     Users.associate = (models) => {
