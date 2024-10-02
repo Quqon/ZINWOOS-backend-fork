@@ -6,8 +6,8 @@ const getAll = async (sort, order, limit, offset) => {
             SELECT items.*, COUNT(likes.item_id) as likeCount
             FROM items
             LEFT JOIN likes ON likes.item_id = items.id
-            LEFT JOIN sub_categories ON sub_categories.id = items.id
-            LEFT JOIN main_categories ON main_categories.id = sub_categories.main_category_id
+            LEFT JOIN Sub_categories ON Sub_categories.id = items.id
+            LEFT JOIN main_categories ON main_categories.id = Sub_categories.main_category_id
             GROUP BY items.id, items.name, items.price, items.description, items.sub_category_id
             ORDER BY ${sort === 'likeCount' ? 'likeCount' : `items.${sort}`} ${order}
             LIMIT :limit OFFSET :offset
@@ -30,8 +30,8 @@ const getMainList = async (main_category_id, sort = 'Items.id', order = 'ASC', l
             SELECT items.*, COUNT(likes.item_id) as likeCount
             FROM items
             LEFT JOIN likes ON likes.item_id = items.id
-            LEFT JOIN sub_categories ON sub_categories.id = items.sub_category_id
-            WHERE sub_categories.main_category_id = :main_category_id
+            LEFT JOIN Sub_categories ON Sub_categories.id = items.sub_category_id
+            WHERE Sub_categories.main_category_id = :main_category_id
             GROUP BY items.id
             ORDER BY ${sort === 'likeCount' ? 'likeCount' : `items.${sort}`} ${order}
             LIMIT :limit OFFSET :offset
