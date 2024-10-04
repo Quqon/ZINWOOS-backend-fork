@@ -29,8 +29,8 @@ const deleteItem = async (itemName) => {
     return result;
 }
 
-const updateItem = async (updateItemName, name, description, price, detail, max_amount, stock) => {
-    const result = await itemRepository.updateItem(updateItemName, name, description, price, detail, max_amount, stock);
+const updateItem = async (updateItemName, name, description, price, detail, max_amount, stock, File) => {
+    const result = await itemRepository.updateItem(updateItemName, name, description, price, detail, max_amount, stock, File);
     return result;
 }
 

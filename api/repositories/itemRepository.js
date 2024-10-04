@@ -131,7 +131,7 @@ const deleteItem = async (itemName) => {
     }
 }
 
-const updateItem = async (updateItemName, name, description, price, detail, max_amount, stock) => {
+const updateItem = async (updateItemName, name, description, price, detail, max_amount, stock, File) => {
     try {
         const [affectedRows] = await db.Items.update(
             {
@@ -140,7 +140,8 @@ const updateItem = async (updateItemName, name, description, price, detail, max_
                 price,
                 detail,
                 max_amount,
-                stock
+                stock,
+                File
             },
             {
                 where: { name: updateItemName }
