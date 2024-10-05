@@ -96,6 +96,8 @@ const delNonCart = asyncWrap(async (req, res) => {
         const { cartId } = req.query;
         const sessionId = req.headers['authorization'];
 
+        console.log(cartId, sessionId)
+
         if (!cartData[sessionId]) {
             return res.status(404).json({ message: 'No cart data found for this session' });
         }
@@ -155,6 +157,7 @@ const deleteCart = asyncWrap(async (req, res) => {
     const userId = req.user[0].dataValues.id;
     const { cartId } = req.query;
 
+    console.log(userId, cartId)
     if (!cartId) {
         const error = new Error('KEY_ERROR');
         error.statusCode = 400;
