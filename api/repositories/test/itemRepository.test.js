@@ -5,9 +5,12 @@ const itemRepository = require('../itemRepository');
 
 describe('itemRepository test', () => {
     const mockItems = [
-        { id: 1, name: 'Item 1', likeCount: 5, price: 500 },
+        { id: 1, name: 'Item 1', likeCount: 2, price: 500 },
         { id: 2, name: 'Item 2', likeCount: 3, price: 300 }
     ]
+    const sortedLikeCount = [...mockItems].sort((a, b) => b.likeCount - a.likeCount);
+    const sortedPrice = [...mockItems].sort((a, b) => b.price - a.price);
+    const sortedName = [...mockItems].sort((a, b) => a.name.localeCompare(b.name));
 
     let sandbox;
 
@@ -23,33 +26,33 @@ describe('itemRepository test', () => {
 
     describe('test getAll method', () => {
         it('should return items sorted by likeCount', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedLikeCount);
 
             const result = await itemRepository.getAll('likeCount', 'DESC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY likeCount DESC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedLikeCount);
         });
 
         it('should return items sorted by price', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedPrice);
 
             const result = await itemRepository.getAll('price', 'DESC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY items.price DESC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedPrice);
         });
 
         it('should return items sorted by name', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedName);
 
             const result = await itemRepository.getAll('name', 'ASC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY items.name ASC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedName);
         })
 
         it('should limit and offset the results', async () => {
@@ -78,33 +81,33 @@ describe('itemRepository test', () => {
         });
 
         it('should return items sorted by likeCount', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedLikeCount);
 
             const result = await itemRepository.getMainList(1, 'likeCount', 'ASC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY likeCount ASC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedLikeCount);
         });
 
         it('should return items sorted by price', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedPrice);
 
             const result = await itemRepository.getMainList(1, 'price', 'ASC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY items.price ASC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedPrice);
         });
 
         it('should return items sorted by name', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedName);
 
             const result = await itemRepository.getMainList(1, 'name', 'DESC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY items.name DESC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedName);
         });
 
         it('should limit and offset the results', async () => {
@@ -132,33 +135,33 @@ describe('itemRepository test', () => {
         });
 
         it('should return items sorted by likeCount', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedLikeCount);
 
             const result = await itemRepository.getSubList(2, 'likeCount', 'ASC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY likeCount ASC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedLikeCount);
         });
 
         it('should return items sorted by price', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedPrice);
 
             const result = await itemRepository.getSubList(2, 'price', 'ASC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY items.price ASC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedPrice);
         });
 
         it('should return items sorted by name', async () => {
-            db.sequelize.query.resolves(mockItems);
+            db.sequelize.query.resolves(sortedName);
 
             const result = await itemRepository.getSubList(2, 'name', 'ASC', 10, 0);
 
             expect(db.sequelize.query.calledOnce).toBe(true);
             expect(db.sequelize.query.firstCall.args[0]).toContain('ORDER BY items.name ASC');
-            expect(result).toEqual(mockItems);
+            expect(result).toEqual(sortedName);
         });
 
         it('should limit and offset the results', async () => {

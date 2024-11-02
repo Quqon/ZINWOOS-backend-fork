@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1727331508041" clover="3.2.0">
-  <project timestamp="1727331508041" name="All files">
-    <metrics statements="1331" coveredstatements="859" conditionals="49" coveredconditionals="43" methods="71" coveredmethods="19" elements="1451" coveredelements="921" complexity="0" loc="1331" ncloc="1331" packages="5" files="26" classes="26"/>
+<coverage generated="1730579748037" clover="3.2.0">
+  <project timestamp="1730579748038" name="All files">
+    <metrics statements="1355" coveredstatements="885" conditionals="51" coveredconditionals="46" methods="71" coveredmethods="19" elements="1477" coveredelements="950" complexity="0" loc="1355" ncloc="1355" packages="5" files="26" classes="26"/>
     <package name="controllers">
       <metrics statements="85" coveredstatements="85" conditionals="13" coveredconditionals="11" methods="0" coveredmethods="0"/>
-      <file name="itemController.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/controllers/itemController.js">
+      <file name="itemController.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/controllers/itemController.js">
         <metrics statements="85" coveredstatements="85" conditionals="13" coveredconditionals="11" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -94,8 +94,8 @@
       </file>
     </package>
     <package name="models">
-      <metrics statements="419" coveredstatements="400" conditionals="13" coveredconditionals="11" methods="16" coveredmethods="11"/>
-      <file name="carts.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/carts.js">
+      <metrics statements="442" coveredstatements="423" conditionals="13" coveredconditionals="11" methods="16" coveredmethods="11"/>
+      <file name="carts.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/carts.js">
         <metrics statements="50" coveredstatements="50" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -148,7 +148,7 @@
         <line num="49" count="3" type="stmt"/>
         <line num="50" count="3" type="stmt"/>
       </file>
-      <file name="index.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/index.js">
+      <file name="index.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/index.js">
         <metrics statements="57" coveredstatements="56" conditionals="2" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -208,8 +208,8 @@
         <line num="56" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
       </file>
-      <file name="items.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/items.js">
-        <metrics statements="65" coveredstatements="57" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="items.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/items.js">
+        <metrics statements="74" coveredstatements="66" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -264,19 +264,28 @@
         <line num="52" count="3" type="stmt"/>
         <line num="53" count="3" type="stmt"/>
         <line num="54" count="3" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
         <line num="63" count="3" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
-        <line num="65" count="3" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="74" count="3" type="stmt"/>
       </file>
-      <file name="likes.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/likes.js">
+      <file name="likes.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/likes.js">
         <metrics statements="33" coveredstatements="33" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -312,8 +321,8 @@
         <line num="32" count="3" type="stmt"/>
         <line num="33" count="3" type="stmt"/>
       </file>
-      <file name="main_categories.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/main_categories.js">
-        <metrics statements="25" coveredstatements="23" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="main_categories.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/main_categories.js">
+        <metrics statements="21" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -330,17 +339,13 @@
         <line num="14" count="3" type="stmt"/>
         <line num="15" count="3" type="stmt"/>
         <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
         <line num="20" count="3" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
       </file>
-      <file name="options.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/options.js">
+      <file name="options.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/options.js">
         <metrics statements="22" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>
@@ -365,7 +370,7 @@
         <line num="21" count="3" type="stmt"/>
         <line num="22" count="3" type="stmt"/>
       </file>
-      <file name="options_items.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/options_items.js">
+      <file name="options_items.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/options_items.js">
         <metrics statements="24" coveredstatements="24" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>
@@ -392,7 +397,7 @@
         <line num="23" count="3" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
       </file>
-      <file name="orders.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/orders.js">
+      <file name="orders.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/orders.js">
         <metrics statements="28" coveredstatements="28" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>
@@ -423,11 +428,11 @@
         <line num="27" count="3" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
       </file>
-      <file name="sub_categories.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/sub_categories.js">
-        <metrics statements="21" coveredstatements="21" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+      <file name="sub_categories.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/sub_categories.js">
+        <metrics statements="30" coveredstatements="30" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
@@ -446,8 +451,17 @@
         <line num="19" count="3" type="stmt"/>
         <line num="20" count="3" type="stmt"/>
         <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
       </file>
-      <file name="tags.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/tags.js">
+      <file name="tags.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/tags.js">
         <metrics statements="19" coveredstatements="17" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>
@@ -469,7 +483,7 @@
         <line num="18" count="3" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
       </file>
-      <file name="tags_items.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/tags_items.js">
+      <file name="tags_items.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/tags_items.js">
         <metrics statements="25" coveredstatements="25" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>
@@ -497,8 +511,8 @@
         <line num="24" count="3" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
       </file>
-      <file name="users.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/models/users.js">
-        <metrics statements="50" coveredstatements="46" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="users.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/models/users.js">
+        <metrics statements="59" coveredstatements="55" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -542,18 +556,27 @@
         <line num="41" count="3" type="stmt"/>
         <line num="42" count="3" type="stmt"/>
         <line num="43" count="3" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
         <line num="48" count="3" type="stmt"/>
         <line num="49" count="3" type="stmt"/>
         <line num="50" count="3" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
       </file>
     </package>
     <package name="repositories">
-      <metrics statements="493" coveredstatements="233" conditionals="21" coveredconditionals="19" methods="25" coveredmethods="7"/>
-      <file name="cartRepository.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/repositories/cartRepository.js">
+      <metrics statements="494" coveredstatements="236" conditionals="23" coveredconditionals="22" methods="25" coveredmethods="7"/>
+      <file name="cartRepository.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/repositories/cartRepository.js">
         <metrics statements="154" coveredstatements="32" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -710,33 +733,33 @@
         <line num="153" count="1" type="stmt"/>
         <line num="154" count="1" type="stmt"/>
       </file>
-      <file name="itemRepository.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/repositories/itemRepository.js">
-        <metrics statements="164" coveredstatements="160" conditionals="21" coveredconditionals="19" methods="7" coveredmethods="7"/>
+      <file name="itemRepository.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/repositories/itemRepository.js">
+        <metrics statements="165" coveredstatements="163" conditionals="23" coveredconditionals="22" methods="7" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="cond" truecount="1" falsecount="0"/>
         <line num="20" count="4" type="stmt"/>
         <line num="21" count="4" type="stmt"/>
-        <line num="22" count="4" type="cond" truecount="0" falsecount="1"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="4" type="stmt"/>
+        <line num="22" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -754,9 +777,9 @@
         <line num="40" count="6" type="stmt"/>
         <line num="41" count="6" type="stmt"/>
         <line num="42" count="6" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="44" count="6" type="stmt"/>
-        <line num="45" count="6" type="stmt"/>
+        <line num="43" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
         <line num="47" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="48" count="5" type="stmt"/>
@@ -837,12 +860,12 @@
         <line num="123" count="3" type="stmt"/>
         <line num="124" count="3" type="stmt"/>
         <line num="125" count="3" type="stmt"/>
-        <line num="126" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="127" count="2" type="stmt"/>
-        <line num="128" count="2" type="stmt"/>
-        <line num="129" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="130" count="1" type="stmt"/>
-        <line num="131" count="1" type="stmt"/>
+        <line num="126" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="128" count="1" type="stmt"/>
+        <line num="129" count="2" type="stmt"/>
+        <line num="130" count="2" type="stmt"/>
+        <line num="131" count="2" type="stmt"/>
         <line num="132" count="3" type="stmt"/>
         <line num="133" count="1" type="stmt"/>
         <line num="134" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -860,13 +883,13 @@
         <line num="146" count="3" type="stmt"/>
         <line num="147" count="3" type="stmt"/>
         <line num="148" count="3" type="stmt"/>
-        <line num="149" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="150" count="2" type="stmt"/>
+        <line num="149" count="3" type="stmt"/>
+        <line num="150" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="151" count="2" type="stmt"/>
         <line num="152" count="2" type="stmt"/>
         <line num="153" count="2" type="stmt"/>
-        <line num="154" count="3" type="stmt"/>
-        <line num="155" count="1" type="stmt"/>
+        <line num="154" count="2" type="stmt"/>
+        <line num="155" count="3" type="stmt"/>
         <line num="156" count="1" type="stmt"/>
         <line num="157" count="1" type="stmt"/>
         <line num="158" count="1" type="stmt"/>
@@ -876,8 +899,9 @@
         <line num="162" count="1" type="stmt"/>
         <line num="163" count="1" type="stmt"/>
         <line num="164" count="1" type="stmt"/>
+        <line num="165" count="1" type="stmt"/>
       </file>
-      <file name="likeRepository.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/repositories/likeRepository.js">
+      <file name="likeRepository.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/repositories/likeRepository.js">
         <metrics statements="51" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -931,7 +955,7 @@
         <line num="50" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
       </file>
-      <file name="orderRepository.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/repositories/orderRepository.js">
+      <file name="orderRepository.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/repositories/orderRepository.js">
         <metrics statements="65" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -999,7 +1023,7 @@
         <line num="64" count="1" type="stmt"/>
         <line num="65" count="1" type="stmt"/>
       </file>
-      <file name="userRepository.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/repositories/userRepository.js">
+      <file name="userRepository.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/repositories/userRepository.js">
         <metrics statements="59" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -1064,7 +1088,7 @@
     </package>
     <package name="services">
       <metrics statements="292" coveredstatements="121" conditionals="0" coveredconditionals="0" methods="26" coveredmethods="0"/>
-      <file name="cartService.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/services/cartService.js">
+      <file name="cartService.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/services/cartService.js">
         <metrics statements="80" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -1147,7 +1171,7 @@
         <line num="79" count="1" type="stmt"/>
         <line num="80" count="1" type="stmt"/>
       </file>
-      <file name="index.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/services/index.js">
+      <file name="index.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/services/index.js">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -1163,7 +1187,7 @@
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
-      <file name="itemService.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/services/itemService.js">
+      <file name="itemService.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/services/itemService.js">
         <metrics statements="45" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -1211,7 +1235,7 @@
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
       </file>
-      <file name="likeService.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/services/likeService.js">
+      <file name="likeService.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/services/likeService.js">
         <metrics statements="22" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -1236,7 +1260,7 @@
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
       </file>
-      <file name="orderService.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/services/orderService.js">
+      <file name="orderService.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/services/orderService.js">
         <metrics statements="33" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -1272,7 +1296,7 @@
         <line num="32" count="1" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
       </file>
-      <file name="userService.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/services/userService.js">
+      <file name="userService.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/services/userService.js">
         <metrics statements="99" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -1377,7 +1401,7 @@
     </package>
     <package name="utils">
       <metrics statements="42" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="1"/>
-      <file name="error.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/utils/error.js">
+      <file name="error.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/utils/error.js">
         <metrics statements="14" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="7" type="cond" truecount="1" falsecount="0"/>
@@ -1394,7 +1418,7 @@
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
       </file>
-      <file name="validator.js" path="/Users/jeong-inho/37-1st-ZINWOOS-backend/backend/api/utils/validator.js">
+      <file name="validator.js" path="/Users/jeong-inho/Desktop/ZINWOOS-backend-fork/api/utils/validator.js">
         <metrics statements="28" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
